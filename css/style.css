@@ -99,10 +99,17 @@ a img{
 .hero{
   padding: 7rem 0;
 }
-.nav-link{
-  font-size: 2rem;
+ul li{
+  list-style-type: none;
 }
-
+.mainnav{
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+}
+.mainnav:hover{
+  text-decoration: none;
+  color: rgb(235, 226, 226);
+}
 @media (max-width:998px) {
   html{
     font-size: 55%;
@@ -456,18 +463,17 @@ a{
 }
 
 /* card start */
-.card {
+.carder {
   transition: all 0.2s;
   position: relative;
   cursor: pointer;
-  background-color: transparent;
   padding:1rem;
 }
 
 .card-inner {
   width: inherit;
   height: inherit;
-  background: rgba(255,255,255,.05);
+  background: rgba(255,255,255,.05); 
   backdrop-filter: blur(10px);
   border-radius: 8px;
   padding:2rem;
@@ -475,6 +481,7 @@ a{
 
 .card:hover {
   transform: scale(1.04) rotate(1deg);
+  background-color: transparent;
 }
 
 .circle {
